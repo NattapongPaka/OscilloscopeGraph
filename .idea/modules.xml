@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OscilloscopeGraph.iml" filepath="$PROJECT_DIR$/OscilloscopeGraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oscilloscopeGraph/oscilloscopeGraph.iml" filepath="$PROJECT_DIR$/oscilloscopeGraph/oscilloscopeGraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oscilloscopeService2/oscilloscopeService2.iml" filepath="$PROJECT_DIR$/oscilloscopeService2/oscilloscopeService2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbSerial103/usbSerial103.iml" filepath="$PROJECT_DIR$/usbSerial103/usbSerial103.iml" />
+    </modules>
+  </component>
+</project>

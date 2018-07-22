@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".OscilloscopeActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_auto"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/auto_e" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/setting_e"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn_ac_dc"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/dc_e"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn_v_a"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/volt_e"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn_tdiv"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tdiv_e"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn_vdiv"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/vdiv_e"
+            android:textOff=""
+            android:textOn="" />
+
+        <Button
+            android:id="@+id/btn_snapshort"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/photo_e" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/exit_e" />
+    </LinearLayout>
+
+    <!-- Graph View -->
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/graph" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0dip" -->
+            <!-- android:layout_weight="1" > -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/signal1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_centerVertical="true" > -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- Overlay Trigger -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/overlay_trigger_container" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:visibility="visible" > -->
+
+
+            <!-- <com.jjoe64.graphui.SeekBarOverlay -->
+            <!-- android:id="@+id/overlay_trigger_top" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="50" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:tag="top" -->
+            <!-- android:thumb="@drawable/thumb_toff" -->
+            <!-- android:visibility="visible" /> -->
+
+
+            <!-- <com.jjoe64.graphui.VerticalSeekBarOverlay -->
+            <!-- android:id="@+id/overlay_trigger_right" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="10" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:secondaryProgress="50" -->
+            <!-- android:tag="right" -->
+            <!-- android:thumb="@drawable/thumb_ch2" -->
+            <!-- android:visibility="visible" /> -->
+
+
+            <!-- <com.jjoe64.graphui.VerticalSeekBarOverlay -->
+            <!-- android:id="@+id/overlay_trigger_left" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="10" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:secondaryProgress="50" -->
+            <!-- android:tag="left" -->
+            <!-- android:thumb="@drawable/thumb_ch1" /> -->
+
+
+            <!-- <com.jjoe64.graphui.OverlayTrigger -->
+            <!-- android:id="@+id/overlay_trigger" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:clickable="true" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- Overlay Trigger -->
+
+
+            <!-- Overlay Channel -->
+
+            <RelativeLayout
+                android:id="@+id/overlay_channels_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible" >
+
+                <com.jjoe64.graphui.OverlayChannels
+                    android:id="@+id/overlay_channels"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true" />
+            </RelativeLayout>
+            <!-- Overlay Channel -->
+
+
+            <!-- Overlay Cursor -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/overlay_cursors_container" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:visibility="visible" > -->
+
+
+            <!-- <com.jjoe64.graphui.SeekBarOverlay -->
+            <!-- android:id="@+id/overlay_cursors_top" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="20" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:tag="top" -->
+            <!-- android:thumb="@drawable/thumb_t0" /> -->
+
+
+            <!-- <com.jjoe64.graphui.SeekBarOverlay -->
+            <!-- android:id="@+id/overlay_cursors_bottom" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="80" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:tag="bottom" -->
+            <!-- android:thumb="@drawable/thumb_t1" /> -->
+
+
+            <!-- <com.jjoe64.graphui.VerticalSeekBarOverlay -->
+            <!-- android:id="@+id/overlay_cursors_right" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="20" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:tag="right" -->
+            <!-- android:thumb="@drawable/thumb_v1" /> -->
+
+
+            <!-- <com.jjoe64.graphui.VerticalSeekBarOverlay -->
+            <!-- android:id="@+id/overlay_cursors_left" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:max="100" -->
+            <!-- android:padding="0px" -->
+            <!-- android:progress="80" -->
+            <!-- android:progressDrawable="@drawable/my_seekbar" -->
+            <!-- android:tag="left" -->
+            <!-- android:thumb="@drawable/thumb_v0" /> -->
+
+
+            <!-- <com.jjoe64.graphui.OverlayCursors -->
+            <!-- android:id="@+id/overlay_cursors" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:clickable="true" /> -->
+            <!-- </RelativeLayout> -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/row1_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="CH1  AC/V  1V/Div  5  mS/Div"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/row2_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="CH2  AC/V  1V/Div  5  mS/Div"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+<!--                 <SeekBar -->
+<!--                     android:id="@+id/seekBar1" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center" -->
+<!--                     android:layout_weight="1" -->
+<!--                     android:max="100" -->
+<!--                     android:paddingRight="5dp" -->
+<!--                     android:progress="0" /> -->
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:paddingLeft="20dp"
+                    android:progress="0" />
+                
+<!--                 <uk.co.informaticscentre.utils.controls.SeekbarWithIntervals -->
+<!--                     android:id="@+id/seekbarWithIntervals" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:background="#FFFFFF"> -->
+<!--                 </uk.co.informaticscentre.utils.controls.SeekbarWithIntervals> -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/btn_stop"
+            android:layout_width="65dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/stop_e"
+            android:textOff=""
+            android:textOn="" />
+
+       
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtsubject1"
+                android:layout_width="fill_parent"
+                android:layout_height="13dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vrms"
+                android:textColor="@color/fontcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtVRMS"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="1:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtVRMS2"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="2:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtsubject2"
+                android:layout_width="fill_parent"
+                android:layout_height="13dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vpp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtVPP"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="1:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtVPP2"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="2:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtsubject3"
+                android:layout_width="fill_parent"
+                android:layout_height="13dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vp"
+                android:textColor="@color/fontcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtVP"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="1:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtVP2"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="2:00V"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtsubject4"
+                android:layout_width="fill_parent"
+                android:layout_height="13dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Freq"
+                android:textColor="@color/fontcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtFREQ"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="1:00Hz"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtFREQ2"
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="left"
+                android:text="2:00Hz"
+                android:textColor="@color/fontcolor"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

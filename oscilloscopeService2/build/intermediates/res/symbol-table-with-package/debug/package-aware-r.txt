@@ -1,0 +1,17 @@
+com.example.oscilloscopeservice2
+int dimen activity_horizontal_margin 0x7f080001
+int dimen activity_vertical_margin 0x7f080002
+int drawable ic_launcher 0x7f090001
+int id buttonSend 0x7f0c0001
+int id editText1 0x7f0c0002
+int id sctextView1 0x7f0c0003
+int id textView1 0x7f0c0004
+int id textViewTitle 0x7f0c0005
+int layout activity_main 0x7f0f0001
+int string action_settings 0x7f150001
+int string app_name 0x7f150002
+int string hello_world 0x7f150003
+int string serial_port 0x7f150004
+int style AppBaseTheme 0x7f160001
+int style AppTheme 0x7f160002
+int xml device_filter 0x7f190001

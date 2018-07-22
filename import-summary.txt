@@ -1,0 +1,321 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From OscilloscopeGraph:
+* .idea\
+* .idea\workspace.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* oscilloscopeGraph\
+* oscilloscopeGraph\build.gradle
+* oscilloscopeGraph\src\
+* oscilloscopeGraph\src\main\
+* oscilloscopeGraph\src\main\AndroidManifest.xml
+* oscilloscopeGraph\src\main\java\
+* oscilloscopeGraph\src\main\java\com\
+* oscilloscopeGraph\src\main\java\com\example\
+* oscilloscopeGraph\src\main\java\com\example\oscilloscopegraph\
+* oscilloscopeGraph\src\main\java\com\example\oscilloscopegraph\MainActivityTest.java
+* oscilloscopeGraph\src\main\java\com\example\oscilloscopegraph\OscilloscopeActivity.java
+* oscilloscopeGraph\src\main\java\com\example\oscilloscopegraph\SplashScreenActivity.java
+* oscilloscopeGraph\src\main\java\com\example\settings\
+* oscilloscopeGraph\src\main\java\com\example\settings\SettingDialog.java
+* oscilloscopeGraph\src\main\java\com\example\settings\SettingModel.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\AbsVerticalSeekBar.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\NineGrid.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\Overlay.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\OverlayChannels.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\OverlayCursors.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\OverlayTrigger.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\SeekBarOverlay.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\VerticalProgressBar.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\VerticalSeekBar.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphui\VerticalSeekBarOverlay.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\BarGraphView.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\CustomLabelFormatter.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\GraphView.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\GraphViewDataInterface.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\GraphViewSeries.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\GraphViewStyle.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\LineGraphView.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\ValueDependentColor.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\compatible\
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\compatible\RealScaleGestureDetector.java
+* oscilloscopeGraph\src\main\java\com\jjoe64\graphview\compatible\ScaleGestureDetector.java
+* oscilloscopeGraph\src\main\java\uk\
+* oscilloscopeGraph\src\main\java\uk\co\
+* oscilloscopeGraph\src\main\java\uk\co\informaticscentre\
+* oscilloscopeGraph\src\main\java\uk\co\informaticscentre\utils\
+* oscilloscopeGraph\src\main\java\uk\co\informaticscentre\utils\MainActivity.java
+* oscilloscopeGraph\src\main\java\uk\co\informaticscentre\utils\controls\
+* oscilloscopeGraph\src\main\java\uk\co\informaticscentre\utils\controls\SeekbarWithIntervals.java
+* oscilloscopeGraph\src\main\res\
+* oscilloscopeGraph\src\main\res\drawable-hdpi\
+* oscilloscopeGraph\src\main\res\drawable-hdpi\auto_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\ch1_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\ch2_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\dc_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\exit_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\ic_launcher.png
+* oscilloscopeGraph\src\main\res\drawable-hdpi\photo_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\run_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\setting_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\start_app_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\stop_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\tdiv_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\trigger_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\vdiv_e.xml
+* oscilloscopeGraph\src\main\res\drawable-hdpi\volt_e.xml
+* oscilloscopeGraph\src\main\res\drawable-ldpi\
+* oscilloscopeGraph\src\main\res\drawable-ldpi\about.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\about_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ac.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ac_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\amp.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\amp_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\auto.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\auto_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\b_down.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\b_left.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\b_right.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\b_up.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\background.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ch1.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ch1_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ch2.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\ch2_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\close.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\close_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\dc.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\dc_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\exit.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\exit_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\help.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\help_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\photo.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\photo_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\run.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\run_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\settings.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\settings_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\splashscreen.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\start_app.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\start_app_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\stop.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\stop_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\tdiv.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\tdiv_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\textbox.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\trigger.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\trigger_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\vdiv.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\vdiv_over.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\volt.png
+* oscilloscopeGraph\src\main\res\drawable-ldpi\volt_over.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\
+* oscilloscopeGraph\src\main\res\drawable-mdpi\ic_launcher.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\my_seekbar.xml
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_ch1.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_ch2.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_t0.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_t1.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_toff.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_v0.png
+* oscilloscopeGraph\src\main\res\drawable-mdpi\thumb_v1.png
+* oscilloscopeGraph\src\main\res\drawable-xhdpi\
+* oscilloscopeGraph\src\main\res\drawable-xhdpi\ic_launcher.png
+* oscilloscopeGraph\src\main\res\drawable-xxhdpi\
+* oscilloscopeGraph\src\main\res\drawable-xxhdpi\ic_launcher.png
+* oscilloscopeGraph\src\main\res\layout\
+* oscilloscopeGraph\src\main\res\layout\activity_main.xml
+* oscilloscopeGraph\src\main\res\layout\div_dialog.xml
+* oscilloscopeGraph\src\main\res\layout\oscilloscope_layout.xml
+* oscilloscopeGraph\src\main\res\layout\seekbar_with_intervals.xml
+* oscilloscopeGraph\src\main\res\layout\seekbar_with_intervals_labels.xml
+* oscilloscopeGraph\src\main\res\layout\settings_dialog.xml
+* oscilloscopeGraph\src\main\res\layout\splash_screen_layout.xml
+* oscilloscopeGraph\src\main\res\values-v11\
+* oscilloscopeGraph\src\main\res\values-v11\styles.xml
+* oscilloscopeGraph\src\main\res\values-v14\
+* oscilloscopeGraph\src\main\res\values-v14\styles.xml
+* oscilloscopeGraph\src\main\res\values\
+* oscilloscopeGraph\src\main\res\values\attr.xml
+* oscilloscopeGraph\src\main\res\values\colors.xml
+* oscilloscopeGraph\src\main\res\values\dimens.xml
+* oscilloscopeGraph\src\main\res\values\strings.xml
+* oscilloscopeGraph\src\main\res\values\styles.xml
+* oscilloscopeService2\
+* oscilloscopeService2\build.gradle
+* oscilloscopeService2\src\
+* oscilloscopeService2\src\main\
+* oscilloscopeService2\src\main\AndroidManifest.xml
+* oscilloscopeService2\src\main\java\
+* oscilloscopeService2\src\main\java\com\
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\activity\
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\activity\Fillter.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\activity\OscApp.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\activity\OscConfig.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\model\
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\model\UNOModel.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\model\UNOSettings.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOHandler.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOIService.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOInterface.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOPinConfig.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOService.java
+* oscilloscopeService2\src\main\java\com\cpeoscilloscope\uno\UNOService2.java
+* oscilloscopeService2\src\main\java\com\example\
+* oscilloscopeService2\src\main\java\com\example\oscilloscopeservice2\
+* oscilloscopeService2\src\main\java\com\example\oscilloscopeservice2\MainActivity.java
+* oscilloscopeService2\src\main\res\
+* oscilloscopeService2\src\main\res\drawable-hdpi\
+* oscilloscopeService2\src\main\res\drawable-hdpi\ic_launcher.png
+* oscilloscopeService2\src\main\res\drawable-mdpi\
+* oscilloscopeService2\src\main\res\drawable-mdpi\ic_launcher.png
+* oscilloscopeService2\src\main\res\drawable-xhdpi\
+* oscilloscopeService2\src\main\res\drawable-xhdpi\ic_launcher.png
+* oscilloscopeService2\src\main\res\drawable-xxhdpi\
+* oscilloscopeService2\src\main\res\drawable-xxhdpi\ic_launcher.png
+* oscilloscopeService2\src\main\res\layout\
+* oscilloscopeService2\src\main\res\layout\activity_main.xml
+* oscilloscopeService2\src\main\res\values-v11\
+* oscilloscopeService2\src\main\res\values-v11\styles.xml
+* oscilloscopeService2\src\main\res\values-v14\
+* oscilloscopeService2\src\main\res\values-v14\styles.xml
+* oscilloscopeService2\src\main\res\values\
+* oscilloscopeService2\src\main\res\values\dimens.xml
+* oscilloscopeService2\src\main\res\values\strings.xml
+* oscilloscopeService2\src\main\res\values\styles.xml
+* oscilloscopeService2\src\main\res\xml\
+* oscilloscopeService2\src\main\res\xml\device_filter.xml
+* proguard-project.txt
+* settings.gradle
+* usbSerial103\
+* usbSerial103\build.gradle
+* usbSerial103\src\
+* usbSerial103\src\main\
+* usbSerial103\src\main\AndroidManifest.xml
+* usbSerial103\src\main\java\
+* usbSerial103\src\main\java\com\
+* usbSerial103\src\main\java\com\hoho\
+* usbSerial103\src\main\java\com\hoho\android\
+* usbSerial103\src\main\java\com\hoho\android\usbserial\
+* usbSerial103\src\main\java\com\hoho\android\usbserial\BuildInfo.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\CdcAcmSerialDriver.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\CommonUsbSerialPort.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\Cp21xxSerialDriver.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\FtdiSerialDriver.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\ProbeTable.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\ProlificSerialDriver.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\UsbId.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\UsbSerialDriver.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\UsbSerialPort.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\UsbSerialProber.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\driver\UsbSerialRuntimeException.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\util\
+* usbSerial103\src\main\java\com\hoho\android\usbserial\util\HexDump.java
+* usbSerial103\src\main\java\com\hoho\android\usbserial\util\SerialInputOutputManager.java
+* usbSerial103\src\main\res\
+* usbSerial103\src\main\res\drawable-hdpi\
+* usbSerial103\src\main\res\drawable-hdpi\ic_launcher.png
+* usbSerial103\src\main\res\drawable-mdpi\
+* usbSerial103\src\main\res\drawable-mdpi\ic_launcher.png
+* usbSerial103\src\main\res\drawable-xhdpi\
+* usbSerial103\src\main\res\drawable-xhdpi\ic_launcher.png
+* usbSerial103\src\main\res\drawable-xxhdpi\
+* usbSerial103\src\main\res\drawable-xxhdpi\ic_launcher.png
+* usbSerial103\src\main\res\values-v11\
+* usbSerial103\src\main\res\values-v11\styles.xml
+* usbSerial103\src\main\res\values-v14\
+* usbSerial103\src\main\res\values-v14\styles.xml
+* usbSerial103\src\main\res\values\
+* usbSerial103\src\main\res\values\strings.xml
+* usbSerial103\src\main\res\values\styles.xml
+From OscilloscopeService2:
+* build.gradle
+* ic_launcher-web.png
+* proguard-project.txt
+From UsbSerial103:
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:22.2.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In UsbSerial103:
+* AndroidManifest.xml => usbSerial103\src\main\AndroidManifest.xml
+* res\ => usbSerial103\src\main\res\
+* src\ => usbSerial103\src\main\java\
+In OscilloscopeService2:
+* AndroidManifest.xml => oscilloscopeService2\src\main\AndroidManifest.xml
+* assets\ => oscilloscopeService2\src\main\assets
+* res\ => oscilloscopeService2\src\main\res\
+* src\ => oscilloscopeService2\src\main\java\
+In OscilloscopeGraph:
+* AndroidManifest.xml => oscilloscopeGraph\src\main\AndroidManifest.xml
+* assets\ => oscilloscopeGraph\src\main\assets
+* res\ => oscilloscopeGraph\src\main\res\
+* src\ => oscilloscopeGraph\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
